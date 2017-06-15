@@ -48,10 +48,10 @@ class Prikaz:
         k1 = self.igra.a[self.igra.i]
         k2 = self.igra.b[self.igra.i]
         self.igra.i +=1
-        self.narisi_karto(300,370,k1)
-        self.narisi_karto(1100,370,k2)
-        if self.igra.i < min(len(self.igra.a),len(self.igra.b)):
-            self.platno.after(1000,self.poteza)
+        self.narisi_karto(300, 367, k1)
+        self.narisi_karto(1100, 367, k2)
+        if self.igra.i < min(len(self.igra.a), len(self.igra.b)):
+            self.platno.after(1000, self.poteza)
         else:
             self.napis1.config(text = 'Tvoj rezultat je ' + str(self.igra.tvoj_rezultat))
 
