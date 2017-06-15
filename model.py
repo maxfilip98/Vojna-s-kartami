@@ -48,14 +48,14 @@ class Igra:
             if k1 > k2:
                 self.tvoj_rezultat += 1
 
-                with open('datoteka.txt','w') as datoteka:
-                    print(self.tvoj_rezultat, self.nasprotnikov_rezultat, file = datoteka)
+                with open('datoteka.txt','a') as datoteka:
+                    print('Tvoj rezultat je {} in nasprotnikov rezultat je {}.'.format(self.tvoj_rezultat, self.nasprotnikov_rezultat), file=datoteka)
 
                 
             else:
                 self.nasprotnikov_rezultat += 1
-                with open('datoteka.txt','w') as datoteka:
-                    print(self.tvoj_rezultat, self.nasprotnikov_rezultat, file = datoteka)
+                with open('datoteka.txt','a') as datoteka:
+                    print('Tvoj rezultat je {} in nasprotnikov rezultat je {}.'.format(self.tvoj_rezultat, self.nasprotnikov_rezultat), file=datoteka)
 
             print('Tvoje število točk je ', self.tvoj_rezultat, '.')
 
